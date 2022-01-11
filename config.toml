@@ -1,0 +1,87 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+theme = "tailwindcustom"
+title = "My New Hugo Site"
+[languages.de]
+contentDir = "content/de"
+languageName = "Deutsch"
+weight = 20
+    [languages.de.menu]
+[[languages.de.menu.main]]
+      name = 'Startseite'
+      url = '/'
+      weight = 0
+[[languages.de.menu.main]]
+      name = 'hello de 2'
+      url = '/h4elo'
+      weight = 1
+[languages.en]
+contentDir = "content/en"
+languageName = "English"
+weight = 10
+[[menu.main]]
+name = "Privacy"
+parent = "Elements"
+url = "privacy/"
+weight = 1
+[[menu.main]]
+name = "Buy Premium"
+parent = "Contact"
+url = "https://gethugothemes.com/products/bookworm/"
+weight = 1
+[[menu.main]]
+name = "Terms & Conditions"
+parent = "Pages"
+url = "terms-conditions/"
+weight = 5
+[[menu.main]]
+name = "Elements"
+parent = "Pages"
+url = "elements/"
+weight = 4
+[[menu.main]]
+name = "Category"
+parent = "Pages"
+url = "categories/"
+weight = 3
+[[menu.main]]
+name = "Tags"
+parent = "Pages"
+url = "tags/"
+weight = 2
+[[menu.main]]
+name = "Author"
+parent = "Pages"
+url = "author/"
+weight = 1
+[[menu.main]]
+hasChildren = true
+name = "Pages"
+url = "#"
+weight = 4
+[[menu.main]]
+name = "Contact"
+url = "contact/"
+weight = 3
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 2
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[languages.es]
+contentDir = "content/es"
+languageName = "Español"
+weight = 20
+[languages.fr]
+contentDir = "content/fr"
+languageName = "Français"
+weight = 20
+[languages.nl]
+contentDir = "content/nl"
+languageName = "Nederlands"
+weight = 20
+[markup.goldmark.renderer]
+unsafe = true

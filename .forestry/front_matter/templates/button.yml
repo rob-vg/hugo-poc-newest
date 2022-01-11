@@ -1,0 +1,14 @@
+---
+label: button
+hide_body: true
+fields:
+- name: text
+  type: text
+  config:
+    required: false
+  label: text
+- name: link
+  type: text
+  config:
+    required: false
+  label: link

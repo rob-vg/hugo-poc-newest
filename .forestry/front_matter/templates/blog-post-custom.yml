@@ -1,0 +1,36 @@
+---
+label: Blog post custom
+hide_body: true
+fields:
+- name: slug
+  type: text
+  config:
+    required: false
+  label: slug
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: content
+- name: block
+  type: blocks
+  template_types: []
+  config:
+    min: 
+    max: 
+  label: Block
+  description: Assemble custom blocks...?
+pages:
+- content/en/blog/asdasdsd.md
+- content/en/blog/test.md
+- content/en/blog/test.md
+- content/nl/blog-template-in-pages-directory.md

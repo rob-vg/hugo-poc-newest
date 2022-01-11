@@ -1,0 +1,36 @@
+{{ if .image }}
+image exists... assets/media...
+
+{{ $image := resources.Get "/media/image-14.png" }}
+
+{{ $resizedsm := $image.Resize "640x" }}
+{{ $resizedmd := $image.Resize "768x" }}
+{{ $resizedlg := $image.Resize "1024x" }}
+{{ $resizedxl := $image.Resize "2048x" }}
+
+<picture>
+  <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
+    {{ $resizedxl.RelPermalink }} 2x,
+    {{ $resizedxl.RelPermalink }} 3x">
+
+  <source media="(min-width: 1024px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
+    {{ $resizedxl.RelPermalink }} 2x,
+    {{ $resizedxl.RelPermalink }} 3x">
+
+  <source media="(min-width: 768px)" srcset="{{ $resizedmd.RelPermalink }} 1x,
+    {{ $resizedlg.RelPermalink }} 2x,
+    {{ $resizedxl.RelPermalink }} 3x">
+
+  <source media="(min-width: 640px)" srcset="{{ $resizedsm.RelPermalink }} 1x,
+    {{ $resizedmd.RelPermalink }} 2x,
+    {{ $resizedlg.RelPermalink }} 3x">
+
+  <img alt="" src="{{ $resizedmd.RelPermalink }}" />
+</picture>
+{{ end }}
+
+{{/*
+https://github.com/gethugothemes/andromeda-light/blob/master/layouts/_default/single.html
+
+<img loading="lazy" decoding="async" class="w-100 rounded-lg" src="{{$imgWebp.RelPermalink}}" alt="blog-post" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+*/}}

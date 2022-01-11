@@ -1,0 +1,52 @@
+[[item]]
+name = "Privacy"
+parent = "Elements"
+url = "privacy/"
+weight = 1
+[[item]]
+name = "Buy Premium"
+parent = "Contact"
+url = "https://gethugothemes.com/products/bookworm/"
+weight = 1
+[[item]]
+name = "Terms & Conditions"
+parent = "Pages"
+url = "terms-conditions/"
+weight = 5
+[[item]]
+name = "Elements"
+parent = "Pages"
+url = "elements/"
+weight = 4
+[[item]]
+name = "Category"
+parent = "Pages"
+url = "categories/"
+weight = 3
+[[item]]
+name = "Tags"
+parent = "Pages"
+url = "tags/"
+weight = 2
+[[item]]
+name = "Author"
+parent = "Pages"
+url = "author/"
+weight = 1
+[[item]]
+hasChildren = true
+name = "Pages"
+url = "#"
+weight = 4
+[[item]]
+name = "Contact"
+url = "contact/"
+weight = 3
+[[item]]
+name = "About"
+url = "about/"
+weight = 2
+[[item]]
+name = "Home"
+url = "/"
+weight = 1

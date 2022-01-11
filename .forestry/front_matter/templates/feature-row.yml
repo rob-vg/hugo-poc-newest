@@ -1,0 +1,19 @@
+---
+label: feature-row
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+- name: image
+  type: include
+  config: {}
+  template: image
+  label: image

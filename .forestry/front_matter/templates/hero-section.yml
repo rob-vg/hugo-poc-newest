@@ -1,0 +1,21 @@
+---
+label: hero-section
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: toggleButton
+  type: boolean
+  label: toggleButton
+  description: If you want to add a button, toggle this to true
+- name: button
+  type: include
+  config: {}
+  template: button
+  label: button
+  showOnly:
+    field: toggleButton
+    value: true

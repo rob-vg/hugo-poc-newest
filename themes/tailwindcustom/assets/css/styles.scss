@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*h1 {
+    @apply text-5xl font-bold mt-12 mb-2
+}*/
+
+.blog-template {
+	background: #fcfcfc;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+	}
+	
+	h3 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: 1.6rem;
+	}
+
+	h5 {
+		font-size: 1.3rem;
+	}
+
+	h6 {
+		font-size: 1.3rem;
+	}
+}
